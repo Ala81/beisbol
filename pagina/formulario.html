@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Contactanos</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="estilos/estilosformulario.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <form enctype="text/plain" action="MAILTO:josealonso9134@gmail.com" method="post">
+
+</head>
+
+<body><div class="animated bounceInUp">
+  
+	<header>
+    <div class="img"><a href="index.html">
+        <img src="img/casa.png"  width="80" height="80" alt="Logo">
+    </a>
+</div>
+</header>
+  <script>
+  
+    function numeros(n){
+            key=n.keyCode || n.which;
+            teclado=String.fromCharCode(key);
+            numero="0123456789";
+            especiales="8-37-38-46"; //array
+            teclado_especial=false;
+  
+            for(var i in especiales){
+                if(key==especiales){
+                    teclado_especial=true;
+                }
+            }
+            if(numero.indexOf(teclado) == -1 && !teclado_especial){
+                return false;
+            }
+        }
+  </script>
+  <script>
+    function soloLetras(e){
+       key = e.keyCode || e.which;
+       tecla = String.fromCharCode(key).toLowerCase();
+       letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+       especiales = "8-37-39-46";
+  
+       tecla_especial = false
+       for(var i in especiales){
+            if(key == especiales[i]){
+                tecla_especial = true;
+                break;
+            }
+        }
+  
+        if(letras.indexOf(tecla)==-1 && !tecla_especial){
+            return false;
+        }
+    }
+  </script>
+  
+  <form id="validar">
+
+
+
+
+
+
+
+  <form id="validar">
+    <body> 
+      
+      <form class="formulario">
+       
+        <div>
+          <p>Contactanos</p>
+        </div>
+      
+        <input type="text" class="form_input"onkeypress="return soloLetras(event);"onpaste="return false">
+        <label for="" class="form_label">Nombres</label>
+
+    
+      <input type="email" class="form_input">
+        <label for="" class ="form_label">Correo</label>
+    
+      <input type="number"  class="form_input" onkeypress="return numeros(event);" onpaste= "return false">
+      <label for="" class="form_label">Teléfono</label>
+    
+      <input type="text" class="form_input">
+      <label for="" class="form_label">Mensaje</label>
+      
+      <input type="submit" class="btn-neon">
+
+      
+        <span id="span1"></span>
+        <span id="span2"></span>
+        <span id="span3"></span>
+        <span id="span4"></span>
+     
+      </form>
+     <script  src="js/mainformulario.js"></script>
+
+    
+    </form>
+  
+  </form>
+
+       
+  
+</body>
+
+           <!--::::Pie de Pagina::::::-->
+           <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="Logo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                  <h2>Escuela de beisbol</h2>
+                  <i class="	fas fa-map-marker-alt">Campo esparta,San Antonio, San Felipe, Gto.</i>
+                  <i class=" fas fa-phone">4281206567</i><br>
+                  <i class=" fas fa-portrait">beisbolsf@gmail.com</i>
+                  
+                    
+                    </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                      <a href="https://www.facebook.com/Escuela-de-B%C3%A9isbol-Infantil-y-Juvenil-San-Felipe-115912864439531/" class="fab fa-facebook"></a>
+                    <a href="https://www.instagram.com/escuela_de_beisbol_san_felipe/?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
+                    <a href="https://mobile.twitter.com/home" class="fab fa-twitter"></a>
+                  </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>beisbol</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+
+
+</html>

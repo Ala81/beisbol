@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+ 
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+.menu{
+    
+    font-size: 30px;
+  text-align: right;
+    text-decoration: none;
+    margin-top: 0%;
+}
+.contenedor {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+.contacto-wrapper {
+    box-shadow: 0 0 20px 0 rgba(11, 12, 12, 0.3);
+}
+
+.contacto-wrapper > * {
+    padding: 1em;
+}
+
+.contacto-form {
+    
+    background-image:  url(img/filtrasol.jpg);
+
+    font-size: .6cm;
+    color: #060706;
+}
+
+.contacto-form h3{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    font-size: 1cm;
+}
+
+.contacto-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-form form label {
+    display: block;
+}
+
+.contacto-form form p {
+    margin: 0;
+    padding: 1.5em;
+}
+
+.contacto-form form .bloque{
+    grid-column:  0;
+}
+
+.contacto-form form button,
+.contacto-form form input,
+.contacto-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: rgb(3, 3, 3);
+    border-bottom: 2px solid #060706;
+    font-family: 'Segoe UI';
+    font-size: .4cm;
+}
+
+.contacto-form form button {
+    background: #e70e0e;
+    border: 0;
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 1em;
+    align-items: center;
+
+}
+
+.contacto-form form button:hover,
+.contacto-form form button:focus {
+    background: #304ed6;
+    color: rgb(231, 45, 45);
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* CONTACT INFO */
+.contacto-info {
+    
+    background-image: url(img/agua.png);
+   image-rendering:pixelated;
+   background-color: black;
+   font-size: large;
+}
+.contacto-info h4{
+color: #e71717;
+margin: 1cm;
+font-size: 30px;
+}
+ .contacto-info ul, .contacto-info p {
+    text-align: center;
+    margin: 0 0 3rem 0;
+}
+
+/* LARGE SIZE */
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+    .contacto-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contacto-wrapper > * {
+        padding: 2em;
+    }
+    .contacto-info h4,
+    .contacto-info ul,
+    .contacto-info p {
+        text-align: left;
+    }
+}
+
+/*barra de menu*/
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    height: 80px;
+    width: 50%;
+    margin-left: 50%;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #007f90;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+
+
+
+
+
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+@keyframes hideShow {
+0%, 16.6%, 33.33%, 100% { width: 0; }
+16.66%, 33.3% { width: auto; }
+}
+
+
+/**/
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: flex;
+    }
+    nav{
+        padding: 0 30px;
+    }
+    ul{
+       
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: #5298df;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 10;
+    }
+    nav ul li{
+        margin: 20px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+  
+        
+
+    }
+   
+    #check:checked ~ ul{
+        left:0;
+    }

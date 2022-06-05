@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+ 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Esta descripción es la que aparece en los buscadores debajo de la URL" />
+	<link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+	<link href="estilos/estilosdeform.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    
+	<title>Registro</title>
+</head>
+
+<body> 
+	<div class="animated bounceInUp">
+	<header>
+        <div class="img"><a href="index.html">
+            <img src="img/casa.png" alt="Logo">
+        </a>
+	</div>
+	</header>
+	<main>
+		<h1>Formulario de registro</h1>
+		<form enctype="text/plain" action="MAILTO:josealonso9134@gmail.com" method="post">
+			<div class='field'>
+				<label>Nombre</label>
+				<input name='nombre' type='name' required value="Nombre" placeholder='Nombre' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Apellidos</label>
+				<input name='apellidos' type='name' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Educasion que cursa</label>
+				<select name='estadoLaboral' required>
+					<option selected disabled>Seleccione una opción</option>
+					<option>primaria</option>
+					<option>secundaria</option>
+					<option>bachillerato</option>
+				</select>
+			</div>
+			<div class='field'>
+				<label>Email</label>
+				<input name='Email' type='email' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Direccion</label>
+				<input name='direccio' type='text' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Cual es tu edad?</label>
+				<input name='edad' type='number' autocomplete />
+			</div>
+			<div class='field'>
+				<label>Teléfono</label>
+				<input name='Telefono' type='number' autocomplete />
+			</div>
+			<div class='textBox'>
+				<label>Porque quieres pertenecer</label>
+				<textarea></textarea>
+			</div>
+		
+			<div class='submit'>
+				<button>
+					Enviar datos
+				</button>
+			</div>
+			<li>al enviar tu enfirmacion estas en espera, nuestro equipo se pondra en contacto con el solicitante lo mas pronto posible</li>
+		</form>
+	</main>
+</body>
+
